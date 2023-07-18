@@ -9,8 +9,9 @@ function ExperiencePage() {
   // TODO: replace PDF with updated portfolio link after deployment
   // TODO: add start date and end date
   return (
-    <div>
-      <ul id="experiences" className="my-14">
+    <div className='text-gray-400 font-sans mb-12'>
+      <h1 className="lg:hidden text-2xl">Experiences</h1>
+      <ul id="experiences" className="mb-14">
         {data.map((experience: Experience) => (
           <ExperienceItem key={experience.id} experience={experience} />
         ))}
@@ -20,7 +21,7 @@ function ExperiencePage() {
         href={resume}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex group p-4 justify-start "
+        className="flex group p-4 w-fit justify-start "
       >
         <p className="group-hover:text-fuchsia-500 group-hover:ease-in-out duration-300 text-gray-400 ">
           My Resume

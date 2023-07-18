@@ -3,7 +3,7 @@ import Nav from "./Nav"
 
 function Header() {
   return(
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col lg:h-screen">
       <div className="align">
         <hgroup>
           <h1 className="text-5xl mb-2 font-bold">Andrew Trotter</h1>
