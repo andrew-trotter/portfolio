@@ -10,7 +10,7 @@ function ProjectItem(props: Props) {
 
   return (
     // TODO: added frosted glass background on hover
-    <li className=" my-12 ">
+    <li className=" mb-12 ">
       <div className="flex gap-4 p-4 rounded-lg hover:bg-slate-500 hover:bg-opacity-10 hover:shadow-2xl duration-300 ease-in-out">
         <img
           className="object-scale-down ml-2 mt-2 self-start"

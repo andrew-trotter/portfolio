@@ -6,8 +6,8 @@ function Projects() {
   const data = projects
   return (
 
-    <div className='text-gray-400 font-sans'>
-            <h1 className="lg:hidden text-2xl">Projects</h1>
+    <div className=''>
+            <h1 className="text-gray-400 font-semibold font-sans text-2xl">Projects</h1>
 
       <ul id="projects" className="mb-24">
         {data.map((project: Project) => <ProjectItem key={project.id} project={project}/>)}
