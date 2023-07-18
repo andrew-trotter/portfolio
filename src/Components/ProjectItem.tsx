@@ -1,4 +1,4 @@
-import { Project } from '../../models/project'
+import { Project } from '../../public/models/project'
 import FeatureItem from './FeatureItem'
 
 interface Props {

@@ -1,10 +1,20 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+import { createRoot } from 'react-dom/client'
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from 'react-router-dom'
 import App from './Components/App'
-import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+const router = createBrowserRouter(
+  createRoutesFromElements(<Route path="/" element={<App />}></Route>)
 )
+
+document.addEventListener('DOMContentLoaded', () => {
+  createRoot(document.getElementById('app') ).render(
+    <RouterProvider router={router} />
+  )
+})

@@ -1,5 +1,5 @@
 import About from './About'
-import Experience from './Experience'
+import Experience from './ExperiencePage'
 import Header from './Header'
 import Footer from './Footer'
 

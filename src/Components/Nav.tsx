@@ -38,9 +38,7 @@ function Nav() {
               <NavLink
                 to={navItem.href}
                 onClick={() => handleNav(`${navItem.href}`)}
-                className={(props) => {
-                  return `${props.isActive ? 'isActive ' : ''}`;
-                }}
+                
               >
                 {navItem.name}
               </NavLink>

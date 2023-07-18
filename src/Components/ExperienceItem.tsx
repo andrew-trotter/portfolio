@@ -1,4 +1,4 @@
-import { Experience } from '../../models/experience'
+import { Experience } from '../../public/models/experience'
 import FeatureItem from './FeatureItem'
 
 interface Props {

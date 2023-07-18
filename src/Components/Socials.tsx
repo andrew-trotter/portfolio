@@ -1,6 +1,7 @@
 import '@fortawesome/fontawesome-free/css/all.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
 config.autoAddCss = false
 
 function Socials() {
