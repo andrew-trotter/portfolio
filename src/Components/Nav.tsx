@@ -1,23 +1,33 @@
 import { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
+// type NavItem = {
+//   name: string
+//   id: string
+//   href: string
+// }
 
 function Nav() {
   const navigation = [
-    { name: 'About', href: '#about' },
-    { name: 'Experiences', href: '#experiences' },
-    { name: 'Projects', href: '#projects' },
+    { name: 'About', id:'nav-about', href: '#about' },
+    { name: 'Experiences', id:'nav-experiences', href: '#experiences' },
+    { name: 'Projects', id:'nav-projects',href: '#projects' },
   ]
-
+  const [active, setActive] = useState('')
   const [path, setPath] = useState('')
 
-  function handleNav(input: string) {
-    setPath(input)
+  function handleNav(href: string, id: string) {
+    setActive(id)
+    setPath(href)
   }
 
+  // add "active" state for handling nav buttons styling active button
+  // Add onFocus() event for changing state, not onClick. 
+  // after testing, onFocus delays rendering until the next onFocus event. Need to research
+
   useEffect(() => {
-    const href = window.location.href.substring(
-      window.location.href.lastIndexOf('#') + 1,
+    const href = path.substring(
+      path.lastIndexOf('#') + 1
     )
 
     const element = document.getElementById(href)
@@ -31,18 +41,15 @@ function Nav() {
       <ul className="flex flex-col gap-4">
         {navigation.map((navItem) => {
           return (
-            <li
+            <NavLink
               key={navItem.name}
-              className="p-2 rounded-lg w-fit focus:ml-4 hover:bg-slate-500 hover:bg-opacity-10 hover:shadow-2xl duration-300 ease-in-out hover:text-slate-200"
+              id={navItem.id}
+              to={navItem.href}
+              onFocus={() => handleNav(navItem.href, navItem.id)}
+              className= {active === navItem.id ? "ml-4 text-slate-200 bg-slate-600 bg-opacity-50 shadow-2xl p-2 rounded-lg w-fit hover:shadow-2xl duration-300 ease-in-out hover:text-slate-200" : "p-2 rounded-lg w-fit  hover:bg-slate-500 hover:bg-opacity-10 hover:shadow-2xl duration-300 ease-in-out hover:text-slate-200"}
             >
-              <NavLink
-                to={navItem.href}
-                onClick={() => handleNav(`${navItem.href}`)}
-                
-              >
-                {navItem.name}
-              </NavLink>
-            </li>
+              <li className="">{navItem.name}</li>
+            </NavLink>
           )
         })}
       </ul>
