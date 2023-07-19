@@ -9,9 +9,9 @@ function ExperiencePage() {
   // TODO: replace PDF with updated portfolio link after deployment
   // TODO: add start date and end date
   return (
-    <div className="text-gray-400 font-sans mb-12">
-      <h1 className="text-2xl">Experiences</h1>
-      <ul id="experiences" className="mb-14">
+    <div id="experiences" className="text-gray-400 font-sans mb-12">
+      <h1 className="text-2xl mb-4">Experiences</h1>
+      <ul  className="">
         {data.map((experience: Experience) => (
           <ExperienceItem key={experience.id} experience={experience} />
         ))}
