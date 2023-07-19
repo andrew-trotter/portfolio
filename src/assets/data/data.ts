@@ -19,6 +19,20 @@ export const projects: Project[] = [
   },
   {
     id: 2,
+    name: 'Website Template Editor by Da Dawgs',
+    desc: `As a learning group project, we made this to have a go at a basic website builder, focussing on allowing the user to change colours of elements in the sandbox. Partway through this project I discovered my planned implementation of the colour changing wouldn't work. So, with 3 hours before the deadline, I researched and discovered a different approach. I was proud of this project for demonstrating my resourcefulness and ability to address sudden change and pivot during a stressful moment.`,
+    url: 'https://github.com/kahikatea-2023/Da-Dawgs/tree/main',
+    image: '../../images/website-template-editor.png',
+    techs: [
+      { name: 'HTML' },
+      { name: 'Express' },
+      { name: 'Handlebars' },
+      { name: 'sqlite3' },
+      { name: 'Knex' },
+    ],
+  },
+  {
+    id: 98,
     name: 'Portfolio Website',
     desc: `I made this website to present myself and the projects I want to showcase. I took this opportunity to improve my front-end styling and adding cool little effects. I'm especially proud of the sticky panel and nav functionality.`,
     url: '/',
