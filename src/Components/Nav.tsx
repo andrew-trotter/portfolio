@@ -37,7 +37,7 @@ function Nav() {
   }, [path])
 
   return (
-    <nav className="hidden lg:flex my-16 text-gray-600">
+    <nav className="hidden lg:flex my-16 text-gray-400">
       <ul className="flex flex-col gap-4">
         {navigation.map((navItem) => {
           return (

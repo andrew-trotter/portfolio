@@ -22,6 +22,7 @@ function ExperiencePage() {
         target="_blank"
         rel="noopener noreferrer"
         className="flex group p-4 w-fit justify-start "
+        aria-label='Link to my resume (PDF, 3.9 MB)'
       >
         <p className="group-hover:text-fuchsia-500 group-hover:ease-in-out duration-300 text-gray-400 ">
           My Resume
