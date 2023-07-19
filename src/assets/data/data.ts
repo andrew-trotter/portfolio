@@ -1,32 +1,59 @@
-import { Project } from "../../models/project";
-import { Experience } from "../../models/experience";
-
-
+import { Project } from '../../../public/models/project'
+import { Experience } from '../../../public/models/experience'
 
 export const projects: Project[] = [
   {
     id: 1,
     name: 'Pinky Promise - Dev Academy Final Project',
     desc: `A web app to help keep yourself and friends accountable! A mobile-first app made for my final group project at Dev Academy. This was the first time I was exposed to an environment with user to user interaction. The challenge here was accommodating for users to have a relationship and see each other's promises regardless of who made it. I would like to improve the robustness around those interaction and style it more acceptably for desktop view.`,
+    url: 'https://github.com/kahikatea-2023/pinky-promise',
     image: '../../images/pinky-promise.png',
-    techs: [{name: 'React'}, {name: 'react-query'}, {name: 'tailwind.css'}, {name: 'TypeScript'}, {name: 'Knex'}, {name: 'SQLite3'}, ]
-  },{
+    techs: [
+      { name: 'React' },
+      { name: 'react-query' },
+      { name: 'tailwind.css' },
+      { name: 'TypeScript' },
+      { name: 'Knex' },
+      { name: 'SQLite3' },
+    ],
+  },
+  {
     id: 2,
+    name: 'Portfolio Website',
+    desc: `I made this website to present myself and the projects I want to showcase. I took this opportunity to improve my front-end styling and adding cool little effects. I'm especially proud of the sticky panel and nav functionality.`,
+    url: '/',
+    image: '../../images/portfolio.jpeg',
+    techs: [
+      { name: 'React' },
+      { name: 'tailwind.css' },
+      { name: 'TypeScript' },
+      { name: 'Vite' },
+    ],
+  },
+  {
+    id: 99,
     name: 'Foundations Blog',
     desc: 'My humble beginnings with a basic blog detailing my journey through the Foundations content of Dev Academy. Made with only HTML and CSS and a cute picture of Fritz my childhood friend.',
-    image: '../../images/personal-blog.png',
-    techs: [{name: 'HTML'}, {name: 'CSS'},]
+    url: 'https://andrew-trotter.github.io/',
+    image: '../../images/foundations-blog.jpeg',
+    techs: [{ name: 'HTML' }, { name: 'CSS' }],
   },
 ]
 
 export const experiences: Experience[] = [
   {
     id: 1,
-    name: "Full Stack Developer Student at Dev Academy Aotearoa",
+    name: 'Full Stack Developer Student at Dev Academy Aotearoa',
     dateStart: 'March',
     dateEnd: 'July 2023',
-    desc: "An indescribable 800 hours in 15 weeks of constant learning and growth to acquire the technical and human skills required for full stack web development in a modern framework. I learnt to learn incredibly fast with a focus on collaboration, self-awareness and giving/receiving feedback.",
-    techs: [{name: 'React'}, {name: 'react-query'}, {name: 'tailwind.css'}, {name: 'TypeScript'}, {name: 'Knex'}, {name: 'SQLite3'}]
-  }
+    desc: 'An indescribable 800 hours in 15 weeks of constant learning and growth to acquire the technical and human skills required for full stack web development in a modern framework. I learnt to learn incredibly fast with a focus on collaboration, self-awareness and giving/receiving feedback.',
+    techs: [
+      { name: 'React' },
+      { name: 'react-query' },
+      { name: 'tailwind.css' },
+      { name: 'TypeScript' },
+      { name: 'Knex' },
+      { name: 'SQLite3' },
+    ],
+  },
 ]
-
