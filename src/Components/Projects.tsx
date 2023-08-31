@@ -12,6 +12,7 @@ function Projects() {
 
       <ul className="mb-24">
         {data.map((project: Project) => (
+          project.display &&
           <ProjectItem key={project.id} project={project} />
         ))}
       </ul>

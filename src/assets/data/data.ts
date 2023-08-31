@@ -19,8 +19,23 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 95,
+    id: 94,
     display: true,
+    name: 'Dungeons and Developers',
+    desc: `A group project with the goal of rolling some dice and getting some funny outcomes relevant to the developer experience. I was the Back End Lead, responsible for the access and flow of data from the database to the front end. We used ChatGPT to write our hilarious outcomes. `,
+    url: 'https://github.com/kahikatea-2023/Dungeons-and-Developers',
+    image: '../../images/dungeons-and-developers.png',
+    techs: [
+      { name: 'React' },
+      { name: 'TypeScript' },
+      { name: 'Express' },
+      { name: 'SQLite3' },
+      { name: 'Knex' },
+    ],
+  },
+  {
+    id: 95,
+    display: false,
     name: 'FrankenCademy',
     desc: `A fun, interactive fighter builder inspired by Mortal Kombat. We took pictures of team members and staff, seperated the body parts and allowed users to mix and match. A very fun project with lots of learning as I implemented the music and fire animations. As the `,
     url: 'https://github.com/kahikatea-2023/Frankencademy',
@@ -29,7 +44,7 @@ export const projects: Project[] = [
       { name: 'React' },
       { name: 'TypeScript' },
       { name: 'Express' },
-      { name: 'sqlite3' },
+      { name: 'SQLite3' },
       { name: 'Knex' },
     ],
   },
@@ -44,7 +59,7 @@ export const projects: Project[] = [
       { name: 'HTML' },
       { name: 'Express' },
       { name: 'Handlebars' },
-      { name: 'sqlite3' },
+      { name: 'SQLite3' },
       { name: 'Knex' },
     ],
   },
@@ -72,7 +87,7 @@ export const projects: Project[] = [
     image: '../../images/portfolio.jpeg',
     techs: [
       { name: 'React' },
-      { name: 'tailwind.css' },
+      { name: 'Tailwind.css' },
       { name: 'TypeScript' },
       { name: 'Vite' },
     ],
@@ -90,7 +105,7 @@ export const projects: Project[] = [
 
 export const experiences: Experience[] = [
   {
-    id: 1,
+    id: 99,
     name: 'Full Stack Developer Student at Dev Academy Aotearoa',
     dateStart: 'March',
     dateEnd: 'July 2023',
@@ -98,9 +113,10 @@ export const experiences: Experience[] = [
     techs: [
       { name: 'React' },
       { name: 'react-query' },
-      { name: 'tailwind.css' },
+      { name: 'Tailwind.css' },
       { name: 'TypeScript' },
       { name: 'Knex' },
+      { name: 'Node.js' },
       { name: 'SQLite3' },
     ],
   },
