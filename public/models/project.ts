@@ -1,5 +1,6 @@
 export type Project = {
   id: number
+  display: boolean
   name: string
   desc: string
   url: string
