@@ -3,7 +3,8 @@ export type Project = {
   display: boolean
   name: string
   desc: string
-  url: string
+  repo: string
+  deployment: string
   image: string
   techs: Tech[]
 }
