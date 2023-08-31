@@ -1,5 +1,8 @@
 import { Project } from '../../public/models/project'
 import FeatureItem from './FeatureItem'
+import '@fortawesome/fontawesome-free/css/all.css'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
 interface Props {
   project: Project
@@ -11,27 +14,50 @@ function ProjectItem(props: Props) {
   return (
     // TODO: added frosted glass background on hover
     <li className=" mb-12 ">
-      <a
-        href={project.url}
-        target={project.name === 'Portfolio Website' ? '' : '_blank'}
-      >
-        <div className="flex gap-4 p-4 rounded-lg hover:bg-slate-500 hover:bg-opacity-10 hover:shadow-2xl duration-300 ease-in-out">
+      <div className="flex gap-4 p-4 rounded-lg hover:bg-slate-500 hover:bg-opacity-10 hover:shadow-2xl duration-300 ease-in-out">
+        <div className="flex flex-col gap-4 justify-start">
+          <div className="flex gap-4 mt-2 ml-2 text-gray-400">
+            <a
+              href={project.repo}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`Link to ${project.name} on GitHub`}
+            >
+              <span className="fa-brands fa-github fa-xl hover:text-fuchsia-500  duration-300 ease-in-out"></span>
+            </a>
+            {project.deployment !== '' && (
+              <a
+                href={project.deployment}
+                target={project.name === 'Portfolio Website' ? '' : '_blank'}
+                rel="noreferrer"
+                aria-label={`Link to ${project.name} deployed`}
+              >
+                <span className="fa-solid fa-globe fa-xl hover:text-fuchsia-500 duration-300 ease-in-out"></span>
+              </a>
+            )}
+          </div>
           <img
             className="object-scale-down rounded-md border border-slate-300 max-w-[105px] ml-2 mt-2 self-start"
             src={project.image}
             alt={project.name}
-            />
-          <div>
+          />
+        </div>
+
+        <div>
+          <a
+            href={project.repo}
+            target={project.name === 'Portfolio Website' ? '' : '_blank'}
+          >
             <h2 className="text-lg font-bold text-fuchsia-500">
               {project.name}
             </h2>
-            <h3 className="text-gray-400">{project.desc}</h3>
-            {project.techs.map((tech) => (
-              <FeatureItem key={tech.name} name={tech.name} />
-            ))}
-          </div>
+          </a>
+          <h3 className="text-gray-400">{project.desc}</h3>
+          {project.techs.map((tech) => (
+            <FeatureItem key={tech.name} name={tech.name} />
+          ))}
         </div>
-      </a>
+      </div>
     </li>
   )
 }
