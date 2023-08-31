@@ -14,7 +14,7 @@ function ExperienceItem(props: Props) {
     <li className=" mb-12 ">
       <div className="flex gap-4 p-4 rounded-lg hover:bg-slate-500 hover:bg-opacity-10 hover:shadow-2xl duration-300 ease-in-out">
         <div>
-          <h4 className="text-lg font-bold text-fuchsia-500">{experience.name}</h4>
+          <h2 className="text-lg font-bold text-fuchsia-500">{experience.name}</h2>
           <p className='text-gray-400 ml-4 my-1'>{experience.desc}</p>
           {experience.techs.map((tech) => (
             <FeatureItem key={tech.name} name={tech.name} />

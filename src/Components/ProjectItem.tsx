@@ -20,12 +20,12 @@ function ProjectItem(props: Props) {
             className="object-scale-down rounded-md border border-slate-300 max-w-[105px] ml-2 mt-2 self-start"
             src={project.image}
             alt={project.name}
-          />
+            />
           <div>
-            <h4 className="text-lg font-bold text-fuchsia-500">
+            <h2 className="text-lg font-bold text-fuchsia-500">
               {project.name}
-            </h4>
-            <h5 className="text-gray-400">{project.desc}</h5>
+            </h2>
+            <h3 className="text-gray-400">{project.desc}</h3>
             {project.techs.map((tech) => (
               <FeatureItem key={tech.name} name={tech.name} />
             ))}
