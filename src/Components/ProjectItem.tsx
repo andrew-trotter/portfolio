@@ -1,8 +1,8 @@
 import { Project } from '../../public/models/project'
 import FeatureItem from './FeatureItem'
-import '@fortawesome/fontawesome-free/css/all.css'
-import { config } from '@fortawesome/fontawesome-svg-core'
-import '@fortawesome/fontawesome-svg-core/styles.css'
+
+
+
 
 interface Props {
   project: Project
