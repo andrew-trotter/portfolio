@@ -1,6 +1,6 @@
 import { experiences } from '../assets/data/data'
 import ExperienceItem from './ExperienceItem'
-import resume from '../assets/data/resume.pdf'
+import resume from '../assets/data/andrew trotter SoT resume software developer.pdf'
 import { Experience } from '../../public/models/experience'
 
 function ExperiencePage() {
