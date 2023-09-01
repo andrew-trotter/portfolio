@@ -7,9 +7,9 @@ import Projects from './Projects'
 import Socials from './Socials'
 import { inject } from '@vercel/analytics';
  
+inject();
 
 function App() {
-  inject();
   return (
     <>
       <div className="app h-full px-6 bg-gray-900 text-white  ">
