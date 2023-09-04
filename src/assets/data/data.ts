@@ -118,6 +118,7 @@ export const experiences: Experience[] = [
     file: certificate,
     dateStart: 'March',
     dateEnd: 'July 2023',
+    img: '../../images/dev-academy-logo.png',
     desc: 'An indescribable 800 hours in 15 weeks of constant learning and growth to acquire the technical and human skills required for full stack web development in a modern framework. I learnt to learn incredibly fast with a focus on collaboration, self-awareness and giving/receiving feedback.',
     techs: [
       { name: 'React' },
