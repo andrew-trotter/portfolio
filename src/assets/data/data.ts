@@ -91,7 +91,7 @@ export const projects: Project[] = [
     desc: `I made this website to present myself and the projects I want to showcase. I took this opportunity to improve my front-end styling and adding cool little effects. I'm especially proud of the sticky panel and nav functionality.`,
     repo: 'https://github.com/andrew-trotter/portfolio',
     deployment: '/',
-    image: '../../images/portfolio.jpeg',
+    image: '../../images/portfolio.png',
     techs: [
       { name: 'React' },
       { name: 'Tailwind.css' },
