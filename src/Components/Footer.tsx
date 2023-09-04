@@ -2,7 +2,7 @@ import Socials from './Socials'
 
 function Footer() {
   return (
-    <div className="flex justify-between text-gray-400 font-medium">
+    <div className="flex justify-between gap-8 text-gray-400 font-medium">
       <div className="lg:hidden block">
         <Socials />
       </div>
