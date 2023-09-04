@@ -6,6 +6,7 @@ export type Experience = {
   file: string
   dateStart: string
   dateEnd: string
+  img: string
   desc: string
   techs: Tech[]
 }
