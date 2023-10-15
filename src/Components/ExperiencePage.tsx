@@ -6,8 +6,6 @@ import { Experience } from '../../public/models/experience'
 function ExperiencePage() {
   const data = experiences
 
-  // TODO: replace PDF with updated portfolio link after deployment
-  // TODO: add start date and end date
   return (
     <div id="experiences" className="text-gray-400 font-sans mb-12">
       <h1 className="text-2xl mb-4">Experiences</h1>
