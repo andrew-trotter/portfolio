@@ -1,16 +1,27 @@
 import { Project } from '../../../public/models/project'
 import { Experience } from '../../../public/models/experience'
-import certificate  from './Andrew Trotter Graduation Certificate.pdf'
+import certificate from './Andrew Trotter Graduation Certificate.pdf'
 
 export const projects: Project[] = [
   {
-    id: 1,
+    id: 92,
+    display: true,
+    name: `GitHub Analysis Tool - WIP`,
+    desc: `A tool that allows a GitHub organisation to visualise repository commit history. I'm learning to utlise Github's GraphQL API along with advanced GraphQL patterns to handle rate limiting and optimise roundtrips. The project will also involve data visulisation where I will learn how to insightfully display that data.`,
+    repo: '',
+    deployment: '',
+    image: '',
+    techs: [{ name: 'React' }, { name: 'GraphQL' }],
+    flags: ['wip'],
+  },
+  {
+    id: 93,
     display: true,
     name: 'Pinky Promise - Dev Academy Final Project',
-    desc: `A web app to help keep yourself and friends accountable! A mobile-first app made for my final group project at Dev Academy. This was the first time I was exposed to an environment with user to user interaction. The challenge here was accommodating for users to have a relationship and see each other's promises regardless of who made it. I would like to improve the robustness around those interaction and style it more acceptably for desktop view.`,
+    desc: `A web app to help keep yourself and friends accountable! A mobile-first app made for my final group project at Dev Academy. This was the first time I was exposed to an environment with user to user interaction. The challenge here was accommodating for users to have a relationship and see each other's promises regardless of who made it. I would like to improve the robustness around those interactions and style it more appropriately for desktop view.`,
     repo: 'https://github.com/kahikatea-2023/pinky-promise',
     deployment: 'https://pinky-promise.onrender.com/',
-    image: '../../images/pinky-promise.png',
+    image: '../../images/pinky-promise',
     techs: [
       { name: 'React' },
       { name: 'react-query' },
@@ -19,6 +30,7 @@ export const projects: Project[] = [
       { name: 'Knex' },
       { name: 'SQLite3' },
     ],
+    flags: [],
   },
   {
     id: 94,
@@ -27,7 +39,7 @@ export const projects: Project[] = [
     desc: `A group project with the goal of rolling some dice and getting some funny outcomes relevant to the developer experience. I was the Back End Lead, responsible for the access and flow of data from the database to the front end. We used ChatGPT to write our hilarious outcomes. `,
     repo: 'https://github.com/kahikatea-2023/Dungeons-and-Developers',
     deployment: '',
-    image: '../../images/dungeons-and-developers.png',
+    image: '../../images/dungeons-and-developers',
     techs: [
       { name: 'React' },
       { name: 'TypeScript' },
@@ -35,6 +47,7 @@ export const projects: Project[] = [
       { name: 'SQLite3' },
       { name: 'Knex' },
     ],
+    flags: [],
   },
   {
     id: 95,
@@ -43,7 +56,7 @@ export const projects: Project[] = [
     desc: `A fun, interactive fighter builder inspired by Mortal Kombat. We took pictures of team members and staff, seperated the body parts and allowed users to mix and match. A very fun project with lots of learning as I implemented the music and fire animations. As the `,
     repo: 'https://github.com/kahikatea-2023/Frankencademy',
     deployment: '',
-    image: '../../images/website-template-editor.png',
+    image: '../../images/website-template-editor',
     techs: [
       { name: 'React' },
       { name: 'TypeScript' },
@@ -51,6 +64,7 @@ export const projects: Project[] = [
       { name: 'SQLite3' },
       { name: 'Knex' },
     ],
+    flags: [],
   },
   {
     id: 96,
@@ -59,7 +73,7 @@ export const projects: Project[] = [
     desc: `As a learning group project, we made this to have a go at a basic website builder, focussing on allowing the user to change colours of elements in the sandbox. I was the Front End Lead responsible for the core colour changing feature and partway through this project I discovered my planned implementation of the colour changing wouldn't work. So, with 3 hours before the deadline, I researched and discovered a different approach using JavaScript to target the HTML attributes and cahnge the styling. I was proud of this project for demonstrating my resourcefulness and ability to address sudden change and pivot during a stressful, time-sensitive moment.`,
     repo: 'https://github.com/kahikatea-2023/Da-Dawgs',
     deployment: '',
-    image: '../../images/website-template-editor.png',
+    image: '../../images/website-template-editor',
     techs: [
       { name: 'HTML' },
       { name: 'Express' },
@@ -67,6 +81,7 @@ export const projects: Project[] = [
       { name: 'SQLite3' },
       { name: 'Knex' },
     ],
+    flags: [],
   },
   {
     id: 97,
@@ -75,7 +90,7 @@ export const projects: Project[] = [
     desc: `My first group project with Dev Academy. I was the Product Owner and this project was a fun envisionment to help the hair stylist and client's comunication to achieve the desired haircut. We had fun with AI image generation for the images. We did have a setback where each team member took a view, and I described two views without enough distinction as they were similar. This resulted in two members working on essentialy the same view. The takeaway was to be careful with similar features to minimise overlap.`,
     repo: 'https://github.com/kahikatea-2023/Cutz-G-Barbershop',
     deployment: '',
-    image: '../../images/portfolio.jpeg',
+    image: '../../images/portfolio',
     techs: [
       { name: 'Handlebars' },
       { name: 'HTML' },
@@ -83,6 +98,7 @@ export const projects: Project[] = [
       { name: 'Express' },
       { name: 'JavaScript' },
     ],
+    flags: [],
   },
   {
     id: 98,
@@ -91,23 +107,25 @@ export const projects: Project[] = [
     desc: `I made this website to present myself and the projects I want to showcase. I took this opportunity to improve my front-end styling and adding cool little effects. I'm especially proud of the sticky panel and nav functionality.`,
     repo: 'https://github.com/andrew-trotter/portfolio',
     deployment: '/',
-    image: '../../images/portfolio.png',
+    image: '../../images/portfolio',
     techs: [
       { name: 'React' },
       { name: 'Tailwind.css' },
       { name: 'TypeScript' },
       { name: 'Vite' },
     ],
+    flags: [],
   },
   {
     id: 99,
     display: true,
     name: 'Foundations Blog',
     desc: 'My humble beginnings with a basic blog detailing my journey through the Foundations content of Dev Academy. Made with only HTML and CSS and a cute picture of Fritz my childhood friend.',
-    repo:'https://github.com/andrew-trotter/andrew-trotter.github.io',
+    repo: 'https://github.com/andrew-trotter/andrew-trotter.github.io',
     deployment: 'https://andrew-trotter.github.io/',
-    image: '../../images/foundations-blog.jpeg',
+    image: '../../images/foundations-blog',
     techs: [{ name: 'HTML' }, { name: 'CSS' }],
+    flags: [],
   },
 ]
 
@@ -118,7 +136,7 @@ export const experiences: Experience[] = [
     file: certificate,
     dateStart: 'March',
     dateEnd: 'July 2023',
-    img: '../../images/dev-academy-logo.png',
+    img: '../../images/dev-academy-logo',
     desc: 'An indescribable 800 hours in 15 weeks of constant learning and growth to acquire the technical and human skills required for full stack web development in a modern framework. I learnt to learn incredibly fast with a focus on collaboration, self-awareness and giving/receiving feedback.',
     techs: [
       { name: 'React' },
