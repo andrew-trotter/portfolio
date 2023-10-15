@@ -7,6 +7,7 @@ export type Project = {
   deployment: string
   image: string
   techs: Tech[]
+  flags: string[]
 }
 
 export type Tech = {
